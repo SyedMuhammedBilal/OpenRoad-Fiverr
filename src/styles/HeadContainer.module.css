@@ -1,0 +1,67 @@
+.cont-btn {
+    background-color: white;
+    color: black;
+    border: 2px solid black;
+}
+
+/*.para {
+    font-family: 'Conv_MonoRGOPro-Bold';
+    background-color: #08be47;
+    letter-spacing: 0.53px;
+    -webkit-box-decoration-break: clone;
+    box-decoration-break: clone;
+}*/
+
+.maindiv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+  }
+  
+  .maindiv1 h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cardDiv1 img {
+      display: block;
+      width: 48%;
+  }
+  
+  .cardDiv1 {
+    background-color: white;
+    border: 3px solid black;
+    border-radius: 4px;
+    display: flex;
+    box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.219);
+    width: 80vw;
+  }
+
+  .cardDiv1 h2 {
+      font-weight: 600;
+      font-size: 38px;
+      background-color: #08be47;
+      letter-spacing: 0.53px;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone;
+  }
+  
+  .cardContent1 {
+    flex: 1;
+    padding: 35px 35px 25px 35px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 600px) {
+    .cardDiv1 {
+      display: flex;
+      flex-direction: column;
+      height: 60%;
+    }
+    .cardDiv1 img {
+        width: 100%;
+    }
+  }

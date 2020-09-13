@@ -1,0 +1,28 @@
+/*.side-menu {
+    position: fixed;
+    background: burlywood;
+    width: 250px;
+    height: 100%;
+}
+
+.side-menu center img {
+    height: 120px;
+    width: 120px;
+    border-radius: 50%;
+    margin-top: 30px;
+    border: 3px solid white;
+}
+
+.side-menu center h2 {
+    color: white;
+}
+
+.side-menu p {
+    display: block;
+    line-height: 60px;
+    transition: 0.5s;
+}
+
+.side-menu {
+
+}*/
