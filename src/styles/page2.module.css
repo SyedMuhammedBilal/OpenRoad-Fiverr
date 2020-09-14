@@ -1,0 +1,160 @@
+.head {
+    background: url("../images/cloud.jpg");
+    height: 100vh;
+    background-repeat: no-repeat;
+    overflow: hidden;
+  }
+  
+  .headerSlogan {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10%;
+    width: 60%;
+  }
+
+  .headerSlogan span {
+    display: inline;
+    background-color: black;
+  }
+  
+  .headerSlogan h1 {
+    background-color: red;
+    font-size: 2.9rem;
+    color: white;
+    align-items: center;
+  }
+  
+  .headerSlogan p {
+    color: gray;
+    font-size: 1.3rem;
+  }
+
+  .bodymain {
+    margin-top: 5%;
+  }
+
+  .bodyContent {
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: 3%;
+    width: 70%;
+  }
+
+  .bodyContent span {
+    display: inline;
+    background-color: lightgreen;
+  }
+
+  .bodyContent li {
+    list-style-type: circle;
+    margin-left: 2%;
+  }
+  
+  .bodyContent h1 {
+    align-items: center;
+    text-align: center;
+  }
+  
+  @media (max-width: 600px) {
+    .bodyContent {
+      display: flex;
+      justify-content: center;
+      width: 70%;
+    }
+    .bodyContent h1 {
+      margin-top: 2%;
+      text-align: center;
+      font-size: 1rem;
+    }
+  }
+  
+  .maindiv {
+    background-color: #f3f3f3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .maindiv h1 {
+    display: flex;
+    justify-content: center;
+  }
+
+  .cardDiv img {
+    display: block;
+    width: 48%;
+  }
+  
+  .cardDiv {
+    box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.219);
+    background-color: white;
+    display: flex;
+  
+    width: 80vw;
+  }
+
+  .cardDiv h2 {
+    font-weight: 500;
+  }
+  
+  .cardContent {
+    flex: 1;
+    padding: 35px 35px 25px 35px;
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (max-width: 600px) {
+    .cardDiv {
+      display: flex;
+      flex-direction: column;
+  
+      height: 60%;
+    }
+    .cardDiv img {
+      width: 100%;
+    }
+  }
+
+  .greenfoot {
+    margin-top: 5%;
+    background: #d4eadd;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .greenfoot h1 {
+    margin-top: 2%;
+    color: #60c063;
+  }
+  
+  .greenfoot p {
+    text-align: center;
+  }
+  
+  .butn {
+    display: inline-block;
+    border-radius: 2rem;
+    background: linear-gradient(57deg, #07b48f, #171a1a);
+    border-radius: 100px;
+    outline: none !important;
+    border: none !important ;
+    padding: 10px;
+    width: 100px;
+    height: 40px;
+    color: white;
+    font-size: 14px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 2%;
+  }
+  
+  .butn:hover {
+    background: linear-gradient(57deg, #171a1a, #07b48f);
+  }

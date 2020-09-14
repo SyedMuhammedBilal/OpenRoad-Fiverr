@@ -4,7 +4,7 @@ import bike from '../images/bike.jpg'
 function Card1() {
     return (
         <>
-        <section class="text-gray-700 body-font">
+        <section style={{marginTop: '12%'}} class="text-gray-700 body-font">
         <div class="container px-5 py-24 mx-auto">
           <div class="flex flex-wrap -m-4">
             <div class="p-4 md:w-1/3">
