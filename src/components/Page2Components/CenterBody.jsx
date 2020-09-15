@@ -1,56 +1,81 @@
 import { Link } from "gatsby";
 import React from "react";
+import { graphql, useStaticQuery } from 'gatsby';
 import styles from "../../styles/page2.module.css";
 
 function CenterBody() {
+
+  const data = useStaticQuery(graphql`
+  query {
+    allContentfulPage02MainHead {
+      edges {
+        node {
+          mainHeading
+        }
+      }
+    }
+    allContentfulPage02Content {
+      edges {
+        node {
+          heading
+          paragraph {
+            paragraph
+          }
+        }
+      }
+    }
+    allContentfulPage02Content02 {
+      edges {
+        node {
+          heading
+          paragraph {
+            paragraph
+          }
+        }
+      }
+    }
+  }
+  `)
+  
   return (
     <div className={styles.bodymain}>
       <div className={styles.bodyContent}>
-        <h1>
-        <span>
-            MELBOURNE HAS ENOUGH TO KEEP VISITOR ENGAGED FOR MONTHS -
-            BARS,GALLERIES,LIVE MUSIC, SHOPPING .BUT THE GREAT OCEAN ROAD
-            BECHONS:A CLASSIC AUSSIE ROAD TRIP.
-        </span>
-        </h1>
-        <br />
-        <h2>WHAT IS MICRO DESIGN?</h2>
-        <br />
-        <p>This section is for what you will wear on the motorcycle trip</p>
-
-        <p>
-          you probably already have most of this .but you may find that a newer
-          piece of gear is better suited to your
-          <Link to="" style={{color: 'green', textDecoration: 'underline'}}> intended destination</Link>
-        </p>
-
-        <p>
-          Remember though , that if you do buy new gear break it in before the
-          journey so that no comfort or compability issues hamper your riding
-          enjoyment.
-        </p>
-        <ul>
-          <li> list item one</li>
-          <li>list item two</li>
-          <li> list item three</li>
-        </ul>
-
-        <h2>WHAT IS MICRO DESIGN?</h2>
-
-        <p>This section is for what you will wear on the motorcycle trip</p>
-
-        <p>
-          you probably already have most of this .but you may find that a newer
-          piece of gear is better suited to your
-          <Link to="" style={{color: 'green', textDecoration: 'underline'}}> intended destination</Link>
-        </p>
-
-        <p>
-          Remember though , that if you do buy new gear break it in before the
-          journey so that no comfort or compability issues hamper your riding
-          enjoyment.
-        </p>
-      </div>
+      {data.allContentfulPage02MainHead.edges.map((edge) => {
+        return (
+            <h1 style={{fontWeight: '700'}}>
+            <span>
+                {edge.node.mainHeading}
+            </span>
+            </h1>
+        )
+      })}
+      <br />
+        {data.allContentfulPage02Content.edges.map((edge) => {
+          return(
+            <div>
+              <h2 style={{fontWeight: '600'}}>{edge.node.heading}</h2>
+              <br />
+              <p style={{fontFamily: 'Roboto Condensed, sans-serif', letterSpacing: '1px', wordSpacing: '2px'}}>{edge.node.paragraph.paragraph}</p>
+            </div>
+          )
+        })}
+          <ul>
+            <li style={{fontFamily: 'Roboto Condensed, sans-serif', letterSpacing: '1px', wordSpacing: '2px'}}> List item one</li>
+            <li style={{fontFamily: 'Roboto Condensed, sans-serif', letterSpacing: '1px', wordSpacing: '2px'}}>List item two</li>
+            <li style={{fontFamily: 'Roboto Condensed, sans-serif', letterSpacing: '1px', wordSpacing: '2px'}}> List item three</li>
+          </ul>
+          <br />
+        {data.allContentfulPage02Content02.edges.map((edge) => {
+            return(
+          <div>
+            <h2 style={{fontWeight: '600'}}>{edge.node.heading}</h2>
+            <br />
+            <p style={{fontFamily: 'Roboto Condensed, sans-serif', letterSpacing: '1px', wordSpacing: '2px'}}>{edge.node.paragraph.paragraph}</p>
+          </div>
+          )
+        })}
+        </div>
+      )
     </div>
   );
 }

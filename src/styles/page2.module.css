@@ -18,15 +18,23 @@
     display: inline;
     background-color: black;
   }
+
+  .headerSlogan .headSpan {
+    display: inline;
+    background-color: red;
+  }
   
   .headerSlogan h1 {
-    background-color: red;
-    font-size: 2.9rem;
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 80px;
+    text-shadow: 3px 3px #1f1f1f;
     color: white;
     align-items: center;
   }
   
   .headerSlogan p {
+    font-family: 'Roboto Condensed', sans-serif;
     color: gray;
     font-size: 1.3rem;
   }
@@ -90,10 +98,10 @@
   }
   
   .cardDiv {
-    box-shadow: 0 0 0.9375em rgba(0, 0, 0, 0.219);
+    border: 2px solid black;
     background-color: white;
     display: flex;
-  
+    margin-top: 20px;
     width: 80vw;
   }
 

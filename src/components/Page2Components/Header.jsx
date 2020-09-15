@@ -5,7 +5,8 @@ function Header() {
   return (
     <div className={styles.head}>
       <div className={styles.headerSlogan}>
-        <h1>How To Travel Nepal By Motorcycle</h1>
+        <h1><span className={styles.headSpan}>How To Travel Nepal By Motorcycle</span></h1>
+        <br />
         <p style={{color: 'white'}}>
             <span>
                 From motorcycle here to routes . luggage , insurance and permits

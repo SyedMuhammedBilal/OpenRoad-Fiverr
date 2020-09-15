@@ -14,7 +14,7 @@ function HeadContainer() {
                 <br />
                 <br />
                 <p>14-SEP-2020</p>
-                <p style={{letterSpacing: '1px'}}>
+                <p style={{fontFamily: 'Roboto Condensed, sans-serif', letterSpacing: '1px'}}>
                     Remember though , that if you do buy new gear break it in before the
                     journey so that no comfort or compability issues hamper your riding
                     enjoyment Remember though ,that if you do buy new gear break it in
